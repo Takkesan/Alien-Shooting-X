@@ -11,7 +11,7 @@ public class ObjectPoolManager : MonoBehaviour
         //poolSize分のオブジェクトを貯めておく
         for (int i = 0; i < firstPoolSize_; i++)
         {
-            GameObject obj = addNewObject();
+            GameObject obj = AddNewObject();
             obj.SetActive(false);
         }
     }
@@ -33,7 +33,7 @@ public class ObjectPoolManager : MonoBehaviour
         return false;
     }
     
-    public GameObject addNewObject()
+    public GameObject AddNewObject()
     {
         GameObject obj = Instantiate(objectToPool_);
         obj.transform.parent = transform;

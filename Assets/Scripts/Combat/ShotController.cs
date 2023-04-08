@@ -20,7 +20,8 @@ public class ShotController : MonoBehaviour
         }
         else
         {
-            Instantiate(bulletPrefab_, createPosition, Quaternion.identity);    
+            bulletObject_ = bulletPool_.AddNewObject();
+            bulletObject_.transform.position = createPosition;
         }
     }
 }
