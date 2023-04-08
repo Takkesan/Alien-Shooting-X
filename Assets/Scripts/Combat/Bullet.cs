@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    private float speed_ = 5.0f;
+    [SerializeField] private float Speed_ = 5.0f;
     
     void Update()
     { 
-        transform.Translate(Vector3.right * speed_ * Time.deltaTime);
+        transform.Translate(Vector3.right * Speed_ * Time.deltaTime);
     }
 }
