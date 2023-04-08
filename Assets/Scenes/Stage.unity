@@ -207,24 +207,52 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1455648872 stripped
+--- !u!1 &691021344
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 3413987327165112949, guid: d4e75975a2902584aabafd0bad784ac4, type: 3}
-  m_PrefabInstance: {fileID: 3413987326263546397}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1455648877
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 691021346}
+  - component: {fileID: 691021345}
+  m_Layer: 0
+  m_Name: PlayerLazerPool
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &691021345
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1455648872}
+  m_GameObject: {fileID: 691021344}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4c377efd7c14e644a0583c9e11323be, type: 3}
+  m_Script: {fileID: 11500000, guid: 1f6f509dc644b1541a3171e3be96eded, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 6018278608482843866, guid: 36d21ca146565654ebe7b31af2e888cb, type: 3}
+  objectToPool_: {fileID: 6018278608482843866, guid: 36d21ca146565654ebe7b31af2e888cb, type: 3}
+  firstPoolSize_: 5
+--- !u!4 &691021346
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 691021344}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.5882221, y: 1.4484379, z: -0.11309955}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &3413987326263546397
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -242,11 +270,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3413987327165112951, guid: d4e75975a2902584aabafd0bad784ac4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.75
+      value: -1.93
       objectReference: {fileID: 0}
     - target: {fileID: 3413987327165112951, guid: d4e75975a2902584aabafd0bad784ac4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.08
+      value: 0.27
       objectReference: {fileID: 0}
     - target: {fileID: 3413987327165112951, guid: d4e75975a2902584aabafd0bad784ac4, type: 3}
       propertyPath: m_LocalPosition.z
