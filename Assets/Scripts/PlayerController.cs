@@ -25,7 +25,12 @@ public class PlayerController : MonoBehaviour
         float verticalInput = Input.GetAxis("Vertical");
         
         //入力に基づいて移動させる
-        transform.Translate(Vector3.right * horizontalInput * SPEED * Time.deltaTime);
-        transform.Translate(Vector3.up * verticalInput * SPEED * Time.deltaTime);
+        float x = transform.position.x + horizontalInput * SPEED * Time.deltaTime;
+        float y = transform.position.y + verticalInput * SPEED * Time.deltaTime;
+        // 画面外に出ないように座標を加工
+        x = Mathf.Clamp(x, -9.75f, 9.75f);
+        y = Mathf.Clamp(y, -4.08f, 4.08f);
+        
+        transform.position = new Vector3(x, y, 0);
     }
 }
