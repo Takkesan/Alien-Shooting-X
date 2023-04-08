@@ -6,16 +6,23 @@ public class PlayerController : MonoBehaviour
 {
     const int SPEED = 5;
     
+    ShotController shotController_;
+    
     // Start is called before the first frame update
     void Start()
     {
-        
+        shotController_ = GetComponent<ShotController>();
     }
 
     // Update is called once per frame
     void Update()
     {
         MoveWithKeyBordPlayer();
+
+        if (Input.GetButtonDown("Shot"))
+        {
+            shotController_.Shot(transform.position);
+        }
     }
     
     private void MoveWithKeyBordPlayer()
@@ -31,6 +38,6 @@ public class PlayerController : MonoBehaviour
         x = Mathf.Clamp(x, -9.75f, 9.75f);
         y = Mathf.Clamp(y, -4.08f, 4.08f);
         
-        transform.position = new Vector3(x, y, 0);
+        transform.position = new Vector2(x, y);
     }
 }
