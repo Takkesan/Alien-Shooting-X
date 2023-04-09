@@ -4,15 +4,11 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private int health_ = 100;
+    public void Damege(int damege)
     {
-        
+        health_ = Mathf.Max(0, health_ - damege);
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
+    public int getHealth => health_;
 }

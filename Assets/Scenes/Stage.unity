@@ -237,7 +237,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToPool_: {fileID: 6018278608482843866, guid: 36d21ca146565654ebe7b31af2e888cb, type: 3}
-  firstPoolSize_: 5
+  firstPoolSize_: 15
 --- !u!4 &691021346
 Transform:
   m_ObjectHideFlags: 0
@@ -253,6 +253,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1254268152 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3413987327165112949, guid: d4e75975a2902584aabafd0bad784ac4, type: 3}
+  m_PrefabInstance: {fileID: 3413987326263546397}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1254268158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1254268152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44e5aab4316fad347a7f8ee4d8fc0dcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &3413987326263546397
 PrefabInstance:
   m_ObjectHideFlags: 0
