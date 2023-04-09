@@ -16,12 +16,11 @@ public class Bullet : MonoBehaviour
     
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.GetComponent<Health>() != null)
+        Health otherHealth = other.gameObject.GetComponent<Health>();
+        if (otherHealth != null)
         {
-            Health health_ = other.gameObject.GetComponent<Health>();
-            health_.Damege(damege_);
-
-            if (health_.getHealth <= 0)
+            otherHealth.Damege(damege_);
+            if (otherHealth.getHealth <= 0)
             {
                 gameObject.SetActive(false);
             }
